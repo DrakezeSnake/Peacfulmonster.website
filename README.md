@@ -19,20 +19,19 @@ Peacfulmonster.website/
 ├── index.html          # Main HTML file
 ├── styles.css          # CSS styles
 ├── script.js           # JavaScript functionality
-├── logo.png            # Your logo file (add this)
+├── Frame 20.svg        # Main logo file
+├── Icon.png            # Alternative logo
 ├── README.md           # This file
 └── .gitattributes      # Git attributes
 ```
 
-## Adding Your Logo
+## Logo Files
 
-To add your custom logo:
-
-1. **Save your logo as `logo.png`** in the root directory
-2. **Recommended size**: 200px width for hero section, 40px height for navbar
-3. **Format**: PNG with transparent background works best
-4. **The website will automatically use your logo** once you add the file
-5. **If no logo is found**, it will show a text-based fallback
+The website uses your custom SVG logo:
+- **`Frame 20.svg`** - Main logo used in hero section and navbar
+- **`Icon.png`** - Alternative logo file (available if needed)
+- **SVG format** provides crisp, scalable graphics
+- **Automatically responsive** across all devices
 
 ## Getting Started
 

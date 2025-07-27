@@ -41,12 +41,10 @@ body {
     align-items: center;
 }
 
-.logo-text {
-    color: #6366f1;
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin: 0;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+.nav-logo-img {
+    height: 40px;
+    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .nav-menu {
@@ -284,27 +282,7 @@ body {
     transform: scale(1.05);
 }
 
-.fallback-logo {
-    display: none;
-    font-size: 3rem;
-    font-weight: 700;
-    color: #6366f1;
-    text-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
-    margin: 0;
-}
 
-/* Show fallback if image fails to load */
-.monster-logo:not([src]), 
-.monster-logo[src=""],
-.monster-logo[src*="logo.png"]:not([src*="data:"]):not([src*="http"]) {
-    display: none;
-}
-
-.monster-logo:not([src]) + .fallback-logo,
-.monster-logo[src=""] + .fallback-logo,
-.monster-logo[src*="logo.png"]:not([src*="data:"]):not([src*="http"]) + .fallback-logo {
-    display: block;
-}
 
 @keyframes logoFloat {
     0%, 100% {
@@ -692,8 +670,8 @@ body {
         width: 150px;
     }
     
-    .logo-text {
-        font-size: 1.2rem;
+    .nav-logo-img {
+        height: 30px;
     }
 
     .hero-title {
