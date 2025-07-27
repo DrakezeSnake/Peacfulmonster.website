@@ -8,7 +8,8 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #e2e8f0;
+    background: #0f172a;
     overflow-x: hidden;
 }
 
@@ -23,11 +24,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(15, 23, 42, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
     transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.1);
 }
 
 .nav-container {
@@ -53,7 +55,7 @@ body {
 
 .nav-link {
     text-decoration: none;
-    color: #333;
+    color: #e2e8f0;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -71,7 +73,7 @@ body {
 .bar {
     width: 25px;
     height: 3px;
-    background: #333;
+    background: #e2e8f0;
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -373,13 +375,13 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 3rem;
-    color: #333;
+    color: #e2e8f0;
 }
 
 /* About Section */
 .about {
     padding: 5rem 0;
-    background: #f8fafc;
+    background: #1e293b;
 }
 
 .about-content {
@@ -392,7 +394,7 @@ body {
 .about-text p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #64748b;
+    color: #94a3b8;
 }
 
 .stats {
@@ -413,7 +415,7 @@ body {
 }
 
 .stat p {
-    color: #64748b;
+    color: #94a3b8;
     font-weight: 500;
 }
 
@@ -437,6 +439,7 @@ body {
 /* Services Section */
 .services {
     padding: 5rem 0;
+    background: #0f172a;
 }
 
 .services-grid {
@@ -446,11 +449,12 @@ body {
 }
 
 .service-card {
-    background: white;
+    background: #1e293b;
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(148, 163, 184, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -474,18 +478,18 @@ body {
 
 .service-card h3 {
     margin-bottom: 1rem;
-    color: #333;
+    color: #e2e8f0;
 }
 
 .service-card p {
-    color: #64748b;
+    color: #94a3b8;
     line-height: 1.6;
 }
 
 /* Contact Section */
 .contact {
     padding: 5rem 0;
-    background: #f8fafc;
+    background: #1e293b;
 }
 
 .contact-content {
@@ -520,18 +524,19 @@ body {
 
 .contact-item h3 {
     margin-bottom: 0.5rem;
-    color: #333;
+    color: #e2e8f0;
 }
 
 .contact-item p {
-    color: #64748b;
+    color: #94a3b8;
 }
 
 .contact-form {
-    background: white;
+    background: #0f172a;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(148, 163, 184, 0.1);
 }
 
 .form-group {
@@ -542,23 +547,32 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 12px;
-    border: 2px solid #e2e8f0;
+    border: 2px solid #334155;
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
+    background: #1e293b;
+    color: #e2e8f0;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #64748b;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
     border-color: #6366f1;
+    background: #1e293b;
 }
 
 /* Footer */
 .footer {
-    background: #1e293b;
+    background: #0f172a;
     color: white;
     padding: 3rem 0 1rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.1);
 }
 
 .footer-content {
@@ -631,12 +645,13 @@ body {
         left: -100%;
         top: 70px;
         flex-direction: column;
-        background-color: white;
+        background-color: #1e293b;
         width: 100%;
         text-align: center;
         transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.3);
         padding: 2rem 0;
+        border-top: 1px solid rgba(148, 163, 184, 0.1);
     }
 
     .nav-menu.active {
