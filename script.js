@@ -215,4 +215,27 @@ const createScrollProgress = () => {
 };
 
 // Initialize scroll progress
-document.addEventListener('DOMContentLoaded', createScrollProgress); 
+document.addEventListener('DOMContentLoaded', createScrollProgress);
+
+// Create additional floating particles
+function createParticles() {
+    const hero = document.querySelector('.hero');
+    const particlesContainer = document.querySelector('.particles');
+    
+    if (!hero || !particlesContainer) return;
+    
+    // Create additional particles dynamically
+    for (let i = 0; i < 15; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.animationDelay = Math.random() * 10 + 's';
+        particle.style.animationDuration = (Math.random() * 10 + 5) + 's';
+        particle.style.width = (Math.random() * 4 + 2) + 'px';
+        particle.style.height = particle.style.width;
+        particlesContainer.appendChild(particle);
+    }
+}
+
+// Initialize particles
+document.addEventListener('DOMContentLoaded', createParticles); 
