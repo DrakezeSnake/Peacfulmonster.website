@@ -39,9 +39,10 @@ body {
     align-items: center;
 }
 
-.nav-logo h2 {
-    color: #6366f1;
-    font-weight: 700;
+.nav-logo-img {
+    height: 40px;
+    width: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .nav-menu {
@@ -252,12 +253,39 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     position: relative;
     z-index: 2;
+    gap: 2rem;
+}
+
+.hero-logo {
+    margin-bottom: 2rem;
+    animation: logoFloat 4s ease-in-out infinite;
+}
+
+.monster-logo {
+    width: 200px;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 255, 0, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.monster-logo:hover {
+    transform: scale(1.05);
+}
+
+@keyframes logoFloat {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 .hero-title {
@@ -616,8 +644,16 @@ body {
     }
 
     .hero-container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         text-align: center;
+    }
+    
+    .monster-logo {
+        width: 150px;
+    }
+    
+    .nav-logo-img {
+        height: 30px;
     }
 
     .hero-title {
