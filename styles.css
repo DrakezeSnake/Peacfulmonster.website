@@ -760,3 +760,66 @@ html {
 .about-text {
     animation: fadeInUp 0.8s ease-out;
 } 
+
+html[dir="rtl"] {
+    direction: rtl;
+}
+
+.game-section {
+    background: #1e293b;
+    padding: 60px 0;
+}
+
+.game-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.game-image {
+    flex: 0 0 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-details {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.game-bullets {
+    list-style: disc inside;
+    color: #e2e8f0;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.game-bullets li {
+    margin-bottom: 0.5rem;
+}
+
+.game-video {
+    background: #334155;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #cbd5e1;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .game-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .game-image, .game-details {
+        width: 100%;
+        justify-content: center;
+    }
+} 
